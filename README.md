@@ -1,6 +1,6 @@
 # OldMaid
 ### Excute:
 
-  javac poker_main.java
+    javac poker_main.java
   
-  java poker_main
+    java poker_main
