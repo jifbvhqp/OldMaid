@@ -1,12 +1,24 @@
 package poker_games;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+
 public class Card {
 	String suit;
 	int rank;
-	
+	Image cardUp,cardBack;
 	public Card(String suit,int rank) {
 		this.suit = suit;
 		this.rank = rank;
+		String filename = "";
+		if(this.suit == "♠") filename += ("Spades" + String.valueOf(this.rank)+".jpg");
+		else if(this.suit == "♥") filename += ("Heart" + String.valueOf(this.rank)+".jpg");
+		else if(this.suit == "♦") filename += ("Diamond" + String.valueOf(this.rank)+".jpg");	
+		else if(this.suit == "♣") filename += ("Club" + String.valueOf(this.rank)+".jpg");	
+		else if(this.suit == "🃏") filename += ("Joker1"+".jpg");	
+		cardUp = new ImageIcon(filename).getImage();
+		cardBack = new ImageIcon("southeast.jpg").getImage();		
 	}
 	
 	public boolean sameRank(Card c1) {
