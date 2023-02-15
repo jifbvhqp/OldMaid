@@ -56,7 +56,7 @@ public class MyPanel extends JPanel implements ActionListener,MouseListener,Mous
 	MyPanel(JFrame frame){
 		this.setPreferredSize(new Dimension(PANEL_WIDTH,PANEL_HEIGHT));
 		//this.setBackground(Color.black);			
-		backgroundImage = new ImageIcon("bg.png").getImage();
+		backgroundImage = new ImageIcon("poker/bg.png").getImage();
 		addMouseListener(this);
 		addMouseMotionListener(this);
 		this.setFocusable(true);

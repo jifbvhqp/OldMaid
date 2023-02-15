@@ -11,7 +11,7 @@ public class Card {
 	public Card(String suit,int rank) {
 		this.suit = suit;
 		this.rank = rank;
-		String filename = "";
+		String filename = "poker/";
 		if(this.suit == "♠") filename += ("Spades" + String.valueOf(this.rank)+".jpg");
 		else if(this.suit == "♥") filename += ("Heart" + String.valueOf(this.rank)+".jpg");
 		else if(this.suit == "♦") filename += ("Diamond" + String.valueOf(this.rank)+".jpg");	
